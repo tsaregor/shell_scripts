@@ -1,0 +1,7 @@
+[Unit]
+Description=etcd-backup
+[Timer]
+OnCalendar=*-*-* 5:30:00
+Unit=etcd-backup.service
+[Install]
+WantedBy=timers.target
